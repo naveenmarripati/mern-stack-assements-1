@@ -1,0 +1,60 @@
+.container{
+    background-color:white;
+    height:100%;
+    width:40%;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 20px 3px white;
+    margin-left: 10px;
+    overflow: auto;
+}
+.image{
+    transition: all 1s ease;
+    height:150px;
+}
+.image:hover{
+    transform: scale(1.2);
+}
+.cube {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCube 5s linear infinite;
+}
+.chegu-image{ transform: translateZ(50px);} /* front */
+
+
+
+@keyframes rotateCube {
+    from { transform: rotateX(0deg); }
+    to { transform: rotateY(360deg); }
+}
+.description{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 10px;
+}
+ul{
+    float:center;
+}
+.list-item{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 10px;
+}
+.image-2{
+    border-radius:20px;
+    height:120px;
+}
+.image-3{
+    border-radius:20px;
+    height:100px;
+    width:130px;
+}
+.image-1{
+    height:160px;
+}
